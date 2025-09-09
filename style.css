@@ -1,0 +1,197 @@
+/* Universal selector */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-color: rgb(102, 94, 186);
+}
+
+/* element selector */
+h1 {
+    color: aliceblue;
+}
+
+p {
+    color: azure;
+}
+
+div {
+    /* creates a default for every div */
+    border: 3px inset rgb(255, 217, 0);
+    width: 300px;
+    text-align: center;
+}
+
+/* class selector
+ classes can be shared by all kinds of elements */
+.style_div {
+    border: 2px inset rgb(255, 204, 0);
+    width: 500px;
+    text-align: end;
+    text-indent: 20px;
+}
+
+.heading {
+    text-decoration: underline wavy;
+    color: wheat;
+}
+
+/* id selectors XP 
+ ids exist one per element*/
+#tutorial {
+    align-items: center;
+    width: 100vw;
+    border: none;
+    color: rgb(255, 94, 0);
+    font-size: 20px;
+}
+
+#shule {
+    color: rgb(226, 225, 225);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* attribute selectors */
+a[href="https://app.zinduaschool.com/courses/introduction-to-programming/lesson/introduction-to-version-control-and-git/"] {
+    background-color: brown;
+    color: white;
+    padding: 6px;
+    margin: 2px;
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+a[target="_blank"] {
+    color: black;
+    background-color: antiquewhite;
+    padding: auto;
+    border: 1px;
+    text-decoration: none;
+}
+
+a[target="_self"]:hover {
+    color: rgb(255, 255, 255);
+    background-color: brown;
+    padding: 3px;
+    border: 1px;
+    text-decoration: none;
+}
+
+/* group selectors */
+h1,
+h2 {
+    background-color: slategrey;
+}
+
+/* pseudo class selectors */
+a:hover {
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+    background-color: brown;
+    border: 3px solid white;
+    text-decoration: none;
+}
+
+button {
+    border: 0px none;
+    color: #fff;
+    background-color: brown;
+    padding: 3px;
+}
+
+button:active {
+    border: 0px none;
+    color: #d4d2d2;
+    background-color: #533a3a;
+    padding: 3px;
+    border-radius: 23%;
+}
+
+input:focus {
+    border-color: brown;
+    cursor: pointer;
+    border: 2px solid brown;
+    border-radius: 5px;
+    margin: 0;
+}
+
+input {
+    border: none;
+}
+
+/* pseudo-element selector */
+/* p::before {
+  content: "Note:";
+  font-weight: bold;
+}
+p::after {
+  content: "(©Kruegenn)";
+  font-size: smaller;
+  font-style: italic;
+  color: rgba(245, 245, 245, 0.459);
+} */
+
+/* decendant selectors */
+div p {
+    color: greenyellow;
+}
+
+/* the difference between group and decendant is a comma or lack thereof */
+/* child selectors */
+/* parent > child{} */
+div>p {
+    color: aqua;
+}
+
+/* this one ignores the decendants that are not immediate
+children of the parent tag */
+/* adjacent sibling selector the next sibling*/
+h1+p {
+    margin-top: 10px;
+}
+
+/* use + symbols, applies to related sibling tag */
+/* general sibling selectors ~ all the siblings*/
+h1~p {
+    color: grey;
+}
+
+h1~a {
+    color: #fff;
+}
+
+/* nested selectors */
+h1 {
+    a {
+        /* used to modify the tags within the tags, simmilarly to child selecors */
+        margin-top: auto;
+    }
+}
+
+nav {
+    & ul {
+        list-style: none;
+        text-align: left;
+
+        & li {
+            display: inline-block;
+
+            & a {
+                text-decoration: none;
+                color: hsl(130, 86%, 34%);
+
+                &:hover {
+                    color: white;
+                    padding: 0p;
+                    cursor: pointer;
+                    background-color: rgb(102, 94, 186);
+                    border: none;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+}
