@@ -1,1 +1,31 @@
-
+* {
+  color: rgb(75, 78, 72);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* Using the flexbox grid to create rows and columns effect*/
+.row {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+/* using box shadow property to give some 3d to the images */
+.sdg-shadow {
+  margin: 3vw;
+  box-shadow: 10px 10px 5px lightblue;
+}
+/* Creating a column that fits 33% of the viewport */
+.col3 {
+  width: 33vw;
+}
+h1 {
+  text-align: center;
+}
+/* creating a nav that appears as a bar at the top */
+.nav {
+  list-style: none;
+  text-align: left;
+  word-spacing: 5vw;
+  & li{
+        display: inline-block;
+  }
+}
