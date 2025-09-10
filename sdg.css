@@ -1,10 +1,20 @@
+/* universal styles */
 * {
   color: rgb(75, 78, 72);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
 }
-
+/* element styles */
+h1,
+h2 {
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+  color: rgb(91, 146, 229);
+}
+/* class styles */
 /* Using the flexbox grid to create rows and columns effect*/
 .row {
   display: flex;
@@ -19,14 +29,10 @@
 .col3 {
   width: 33vw;
 }
-h1,
-h2 {
-  font-size: 3vw;
-  text-align: center;
-  margin-top: 1.5vw;
-  margin-bottom: 1.5vw;
-  color: rgb(91, 186, 237);
+.row img{
+    width: 27vw;
 }
+
 /* creating a nav that appears as a bar at the top */
 .sticky-nav {
   top: 0;
@@ -38,19 +44,22 @@ h2 {
   text-align: left;
   word-spacing: 5vw;
   font-size: 1.4em;
-
-  background-color: rgb(91, 186, 237);
+   
+  background-color: rgb(91, 146, 229);
   margin-top: 0;
   padding: 2vw;
   margin-bottom: 3vw;
 
   & li {
     display: inline-block;
+    color: white;
     & a {
       text-decoration: none;
+      color: white;
     }
   }
 }
+/* id styles */
 #about {
   h2 {
     font-size: 2vw;
@@ -64,6 +73,7 @@ h2 {
     font-size: 2.3vw;
   }
 }
+
 /* .about{
     display: flex;
     align-items: center;

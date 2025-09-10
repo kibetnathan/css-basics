@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+}
+.container {
+  width: 100vw;
+  display: flex;
+}
+.heading {
+  padding: 25px 50px 75px 10px;
+  margin: auto;
+  /* width: 300px; */
+  width: fit-content;
+  border: solid 2pt red;
+  border-radius: 300px;
+}
+/* border-radius is used for 
+curved corners and circular containers */
+img.round{
+  /* width: 30vw;
+    height: 20vw; */
+  border: 2px solid;
+  border-radius: 50%;
+  margin: auto;
+}
+.box {
+  width: 300px;
+  height: 100px;
+  margin: 20px;
+  padding: 15px;
+  border: 5px solid green;
+}
+.box1 {
+  width: 300px;
+  height: 100px;
+  margin: 20px;
+  padding: 15px;
+  border: 5px solid green;
+  box-sizing: border-box;
+
+}
+p{
+    padding: 1em 2em;
+    margin: 5px 20px;
+    border: 5px solid red;
+}
+/* a{
+    padding: 1em 2em;
+    margin: 5px 10px;
+    border: 5px solid red;
+    width: 50px;
+    display: block;
+    background-color: blue;
+    font-size: 1em;
+} */

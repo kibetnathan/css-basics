@@ -1,0 +1,103 @@
+/* Universal styles */
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* element styles */
+h1 {
+  margin: auto;
+  width: fit-content;
+  font-size: 3vw;
+}
+header{
+  display: flexbox;
+}
+/* class styles */
+.card {
+  display: grid;
+  grid-template-columns: 30vw 70vw;
+  gap: 0.1;
+  margin: auto;
+  width: 72vw;
+  /* padding: 5vw; */
+  background-color: rgb(108, 93, 93);
+  color: white;
+  border-radius: 8px;
+}
+.card:hover{
+  display: grid;
+  grid-template-columns: 30vw 70vw;
+  gap: 0.1;
+  margin: auto;
+  width: 72vw;
+  /* padding: 5.5vw; */
+  background-color: rgb(203, 197, 197);
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+  box-shadow: 4px 4px 1px rgb(108, 93, 93) ;
+  & .carditem{
+  padding: 5.5vw;
+}
+  & .pfp{
+    background-color: rgb(127, 102, 102);
+  }
+}
+.pfp {
+  width: fit-content;
+  display: grid;
+  grid-column: 1;
+  border-right: 1px solid black;
+  background-color: rgb(225, 208, 208);
+  border-radius: inherit;
+}
+.pfp img {
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 2vw;
+}
+.content {
+  width: 70%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.carditem{
+  padding: 5vw;
+}
+/* id styles */
+#card {
+  width: 100vw;
+}
+#username {
+  width: fit-content;
+  margin: auto;
+  font-style: italic;
+}
+#social i{
+  font-size: 4vw;
+}
+/* creating a nav that appears as a bar at the top */
+/* .sticky-nav {
+  top: 0;
+  position: sticky;
+} */
+/* position attributes only work with containers */
+/* .nav {
+  list-style: none;
+  text-align: left;
+  word-spacing: 5vw;
+  font-size: 1.4em;
+  color:  (229, 91, 109)rgb(249, 138, 153);
+  background-color: rgb(91, 146, 229);
+  margin-top: 0;
+  padding: 2vw;
+  margin-bottom: 3vw;
+
+  & li {
+    display: inline-block;
+    color: white;
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+} */
