@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="sdg.css" />
+    <link rel="stylesheet" href="sdg.cs" />
   </head>
   <body>
+    <!-- Using .sticky-nav makes the nav stick when you scroll -->
+    <nav class="sticky-nav" draggable="true">
+      <ul class="nav">
+        <li>UNSDGs</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
     <header id="home">
-      <nav>
-        <ul class="nav">
-          <li>UNSDGs</li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-        </ul>
-      </nav>
       <div class="row">
         <div class="col3"></div>
         <div class="col3"><h1>The 17 SDGS</h1></div>
@@ -24,7 +25,8 @@
     <main>
       <section id="about" style="width: 100vw; text-align: center">
         <h2>What are the SDGs?</h2>
-        <div class="row">
+        <!-- first instance using the .row class i created with display: flex; property -->
+        <div class="row about">
           <div class="col3"></div>
           <div class="col3">
             <p>
@@ -202,6 +204,14 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <nav>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

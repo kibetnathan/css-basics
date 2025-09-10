@@ -8,6 +8,7 @@
 /* Using the flexbox grid to create rows and columns effect*/
 .row {
   display: flex;
+  flex-flow: row wrap;
 }
 /* using box shadow property to give some 3d to the images */
 .sdg-shadow {
@@ -24,8 +25,14 @@ h2 {
   text-align: center;
   margin-top: 1.5vw;
   margin-bottom: 1.5vw;
+  color: rgb(91, 186, 237);
 }
 /* creating a nav that appears as a bar at the top */
+.sticky-nav {
+  top: 0;
+  position: sticky;
+}
+/* position attributes only work with containers */
 .nav {
   list-style: none;
   text-align: left;
@@ -36,7 +43,6 @@ h2 {
   margin-top: 0;
   padding: 2vw;
   margin-bottom: 3vw;
-  top: 0;
 
   & li {
     display: inline-block;
@@ -58,3 +64,9 @@ h2 {
     font-size: 2.3vw;
   }
 }
+/* .about{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+} */
+/* unable to allign items to center automatically */
