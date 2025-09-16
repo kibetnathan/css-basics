@@ -11,18 +11,19 @@
     ></script>
   </head>
   <body>
-    <!-- <nav class="sticky-nav" draggable="false">
+    <nav class="sticky-nav" draggable="false">
       <ul class="nav">
+        <li><i class="fa-solid fa-fire-burner"></i></li>
         <li>Ashcamp</li>
       </ul>
-    </nav> -->
+    </nav>
     <header>
       <h1>User Profile</h1>
     </header>
     <section id="card">
-      <div class="card">
+      <div class="card" draggable="true">
         <div class="pfp carditem">
-          <img src="assets/blankprofile.png" alt="profile picture" width="300px" />
+          <img src="assets/profile.jpg" alt="profile picture" width="300px" />
           <span id="username">@kruegenn</span>
         </div>
         <div class="content carditem">
@@ -36,6 +37,18 @@
             <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
           </span>
+          <label for="cars">Choose a car:</label>
+          <select name="cars" id="cars">
+            <option value="finoptions">Financing Options
+              <select name="finance" id="finance">
+                <option value="flexi"></option>
+                <option value="flexi"></option>
+              </select>
+            </option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
         </div>
       </div>
     </section>

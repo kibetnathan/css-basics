@@ -1,6 +1,53 @@
 body{
-    margin: 0;
+  background-color: red;
 }
+@media only screen and (max-width:600px) {
+    body{
+      background-color: yellow;
+    }
+}
+@media only screen and (min-width:768px) {
+    body{
+      background-color: bisque;
+    }
+}
+@media only screen and (min-width: 992px){
+      body{
+    background-color: green;
+}
+    }
+@media only screen and (min-width: 1200px){
+      body{
+    background-color: cyan;
+}
+}
+
+.col{
+  float: left;
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+.colContainer::after{
+  display: table;
+  clear: both;
+  content: "";
+}
+@media only screen and (max-width:900px) {
+  .col{
+    width: 50%;
+  }
+  
+}
+@media only screen and (max-width:600px) {
+  .col{
+    width: 100%;
+  }
+  
+}
+
+
 .container {
   width: 100vw;
   display: flex;

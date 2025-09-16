@@ -4,6 +4,9 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 /* element styles */
+body{
+  margin: 0;
+}
 h1 {
   margin: auto;
   width: fit-content;
@@ -11,6 +14,7 @@ h1 {
 }
 header{
   display: flexbox;
+  margin: 30px;
 }
 /* class styles */
 .card {
@@ -20,9 +24,10 @@ header{
   margin: auto;
   width: 72vw;
   /* padding: 5vw; */
-  background-color: rgb(108, 93, 93);
-  color: white;
+  background-color: rgb(203, 197, 197);
+  color: black;
   border-radius: 8px;
+  border: 1px solid black;
 }
 .card:hover{
   display: grid;
@@ -31,7 +36,7 @@ header{
   margin: auto;
   width: 72vw;
   /* padding: 5.5vw; */
-  background-color: rgb(203, 197, 197);
+  background-color: rgb(234, 222, 222);
   color: rgb(0, 0, 0);
   border-radius: 8px;
   box-shadow: 4px 4px 1px rgb(108, 93, 93) ;
@@ -39,21 +44,23 @@ header{
   padding: 5.5vw;
 }
   & .pfp{
-    background-color: rgb(127, 102, 102);
+    background-color: rgb(139, 106, 106);
   }
+
 }
 .pfp {
   width: fit-content;
   display: grid;
   grid-column: 1;
   border-right: 1px solid black;
-  background-color: rgb(225, 208, 208);
+  background-color: rgb(108, 93, 93);
   border-radius: inherit;
 }
 .pfp img {
   border-radius: 50%;
   display: block;
   margin-bottom: 2vw;
+  border: 1pt solid black;
 }
 .content {
   width: 70%;
@@ -72,32 +79,36 @@ header{
   margin: auto;
   font-style: italic;
 }
-#social i{
+#social a{
   font-size: 4vw;
-}
+  color: rgb(0, 0, 0);
+  }
+
 /* creating a nav that appears as a bar at the top */
-/* .sticky-nav {
+.sticky-nav {
   top: 0;
   position: sticky;
-} */
+}
 /* position attributes only work with containers */
-/* .nav {
+.nav {
   list-style: none;
   text-align: left;
-  word-spacing: 5vw;
   font-size: 1.4em;
-  color:  (229, 91, 109)rgb(249, 138, 153);
-  background-color: rgb(91, 146, 229);
+  background-color: rgb(108, 93, 93);
   margin-top: 0;
   padding: 2vw;
   margin-bottom: 3vw;
 
   & li {
     display: inline-block;
-    color: white;
+    color: black;
     & a {
       text-decoration: none;
-      color: white;
+      color: black;
+    }
+    & i {
+     font-size: 3vw;
+       word-spacing: 0;
     }
   }
-} */
+}

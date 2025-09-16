@@ -1,0 +1,137 @@
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 75;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  padding: 1rem 2vw;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(94, 93, 93);
+  margin: 0;
+}
+.nav-list {
+  list-style: none;
+  text-align: left;
+  padding: 0 5vw;
+  word-spacing: 2rem;
+  & li {
+    display: inline-block;
+
+    & a {
+      word-spacing: normal;
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+.login {
+  color: rgb(1, 123, 123);
+}
+.nav-logo {
+  width: 7vw;
+  margin: 0 5vw;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fefcfc;
+  /* padding: 1rem;  */
+  border-radius: 10px;
+  width: 20vw;
+  padding-left: 0;
+  & li {
+    display: block;
+    word-spacing: normal;
+    line-height: 1.8em;
+    padding: 1rem;
+    transition: all 0.7s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+  }
+  & li:hover {
+    background-color: #e6e6e6;
+    color: rgb(1, 123, 123);
+  }
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.nav-btn {
+  word-spacing: normal;
+  padding: 1em;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(232, 36, 69);
+}
+footer{
+    margin: 0;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    height: 50vh;
+    grid-template-areas: 
+    "Talk Talk Newsletter Newsletter"
+    ;
+}
+.contact{
+    grid-area: Talk;
+    padding: 3vw 4vw;
+    color: white;
+    & h4{
+        color: rgb(232, 36, 69);
+        font-size: 1.4em;
+        margin-bottom: 0;
+    }
+    & p{
+        margin-top: 0.2em;
+    }
+}
+.signup{
+        grid-area: Newsletter;
+    padding: 3vw 4vw;
+    color: white;
+    & h4{
+        color: rgb(232, 36, 69);
+        font-size: 1.4em;
+        margin-bottom: 0;
+    }
+    & p{
+        margin-top: 0.2em;
+    }
+}
+#socials{
+    margin-top: 0;
+    font-size: 1.4em;
+    & i{
+        background-color: rgb(232, 36, 69);
+        margin: 0 0.2vw;
+        padding: 3px;
+        border-radius: 50%;
+        height: 1.4em;
+        width: 1.4em;
+        align-content: center;
+    }
+}
+#email{
+    height:2.8em;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+}
+input.nav-btn{
+    padding: .7em 4em;
+    letter-spacing: 1px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
